@@ -46,7 +46,6 @@
     .card{
       background-color: var(--white);
       width: 90%;
-      height: 90%;
       border-radius: 1em;
     }
 
@@ -119,32 +118,47 @@
       background-color: var(--very-dark-cyan);
       cursor: pointer;
     }
+
+    .card__image img{
+      border-top-left-radius: 1em;
+      border-top-right-radius: 1em;
+      max-width: 100%;
+    }
+
+    .card__content{
+      margin: 1em;
+    }
   </style>
 </head>
 <body>
 
   <section class="card">
-    <div class="card__category">
-      <p>PERFUME</p>
+    <div class="card__image">
+      <img src="./images/image-product-mobile.jpg" alt="">
     </div>
-    <div class="card__title">
-      <h1>Gabrielle Essence Eau De Parfum</h1>
-    </div>
-    <div class="card__description">
-      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-        Perfumer-Creator for the House of CHANEL.</p>
-    </div>
-    <div class="card__price">
-      <p class="card__price__discount">$149.99</p>
-      <p class="card__price__original">$169.99</p>
-    </div>
-    <div class="card_cart">
-      <button class="card__cart__button">
-        <img src="./images/icon-cart.svg" alt="">
-        <p class="card__cart__button__text">
-          Add to Cart
-        </p>
-      </button>
+    <div class="card__content">
+      <div class="card__category">
+        <p>PERFUME</p>
+      </div>
+      <div class="card__title">
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+      </div>
+      <div class="card__description">
+        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+      </div>
+      <div class="card__price">
+        <p class="card__price__discount">$149.99</p>
+        <p class="card__price__original">$169.99</p>
+      </div>
+      <div class="card_cart">
+        <button class="card__cart__button">
+          <img src="./images/icon-cart.svg" alt="">
+          <p class="card__cart__button__text">
+            Add to Cart
+          </p>
+        </button>
+      </div>
     </div>
   </section>
 
